@@ -1,0 +1,56 @@
+defaults:
+  permissions:
+    - ecm/courses/backend/engine
+    - ecm/courses/course/index
+    - ecm/courses/course/show
+    - ecm/courses/course/new
+    - ecm/courses/course/create
+    - ecm/courses/course/edit
+    - ecm/courses/course/update
+    - ecm/courses/course/destroy
+    - ecm/courses/course_category/index
+    - ecm/courses/course_category/show
+    - ecm/courses/course_category/new
+    - ecm/courses/course_category/create
+    - ecm/courses/course_category/edit
+    - ecm/courses/course_category/update
+    - ecm/courses/course_category/destroy
+    - ecm/courses/course_date/index
+    - ecm/courses/course_date/show
+    - ecm/courses/course_date/new
+    - ecm/courses/course_date/create
+    - ecm/courses/course_date/edit
+    - ecm/courses/course_date/update
+    - ecm/courses/course_date/destroy
+  roles:
+    ecm/courses/administrator:
+      - ecm/courses/backend/engine
+      - ecm/courses/course/index
+      - ecm/courses/course/show
+      - ecm/courses/course/new
+      - ecm/courses/course/create
+      - ecm/courses/course/edit
+      - ecm/courses/course/update
+      - ecm/courses/course/destroy
+      - ecm/courses/course_category/index
+      - ecm/courses/course_category/show
+      - ecm/courses/course_category/new
+      - ecm/courses/course_category/create
+      - ecm/courses/course_category/edit
+      - ecm/courses/course_category/update
+      - ecm/courses/course_category/destroy
+      - ecm/courses/course_date/index
+      - ecm/courses/course_date/show
+      - ecm/courses/course_date/new
+      - ecm/courses/course_date/create
+      - ecm/courses/course_date/edit
+      - ecm/courses/course_date/update
+      - ecm/courses/course_date/destroy
+    ecm/courses/reviewer:
+      - ecm/courses/backend/engine
+      - ecm/courses/course/index
+      - ecm/courses/course/show
+      - ecm/courses/course_category/index
+      - ecm/courses/course_category/show
+      - ecm/courses/course_date/index
+      - ecm/courses/course_date/show

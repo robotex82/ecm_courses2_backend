@@ -1,0 +1,4 @@
+
+  localized do
+    mount Ecm::Courses::Backend::Engine => '/backend/ecm/courses'
+  end

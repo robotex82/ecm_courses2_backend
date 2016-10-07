@@ -1,0 +1,6 @@
+de:
+  classes:
+    ecm/courses/backend/engine: 'Kurse'
+  routes:
+    mount:
+      ecm_courses_backend: '/backend/courses'
