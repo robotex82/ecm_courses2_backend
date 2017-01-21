@@ -1,7 +1,7 @@
 Ecm::Courses::Backend::Engine.routes.draw do
-  resources :course_categories
-  resources :courses
-  resources :course_dates
+  backend_resources :course_categories
+  backend_resources :courses
+  backend_resources :course_dates
 
   root to: 'home#index'
 end
