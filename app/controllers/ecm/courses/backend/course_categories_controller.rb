@@ -11,6 +11,10 @@ module Ecm
         def load_resource
           load_scope.friendly.find(params[:id])
         end
+
+        def permitted_params
+          params.require(:course_category).permit(:parent_id, :locale, :name, :description)
+        end
       end
     end
   end
