@@ -1,0 +1,5 @@
+en:
+  classes:
+    ecm/courses/backend/engine: 'Courses'
+  routes:
+    ecm-courses-backend-engine: 'courses'
