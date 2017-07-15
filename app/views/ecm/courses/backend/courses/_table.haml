@@ -1,6 +1,6 @@
-= table.column :course_category, as: :association
-= table.column :locale
-= table.column :name
-= table.column :description, class: 'truncate-chars truncate-chars-30'
+= table.column :course_category, as: :association, sortable: true
+= table.column :locale, sortable: true
+= table.column :name, sortable: true
+= table.column :description, sortable: true, class: 'truncate-chars truncate-chars-30'
 = table.acts_as_list_actions scope: 'course_category_id'
 = table.timestamps

@@ -1,5 +1,5 @@
-= table.column :parent, as: :association
-= table.column :locale
-= table.column :name
-= table.column :description, class: 'truncate-chars truncate-chars-30'
+= table.column :parent, as: :association, sortable: :parent_name
+= table.column :locale, sortable: true
+= table.column :name, sortable: true
+= table.column :description, sortable: true, class: 'truncate-chars truncate-chars-30'
 = table.timestamps

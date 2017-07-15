@@ -1,5 +1,5 @@
-= table.column :course, as: :association
-= table.column :description, class: 'truncate-chars truncate-chars-30'
-= table.column :start_at
-= table.column :end_at
+= table.column :course, as: :association, sortable: true
+= table.column :description, sortable: true, class: 'truncate-chars truncate-chars-30'
+= table.column :start_at, sortable: true
+= table.column :end_at, sortable: true
 = table.timestamps
