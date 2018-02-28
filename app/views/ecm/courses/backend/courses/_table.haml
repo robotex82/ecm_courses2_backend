@@ -1,6 +1,18 @@
-= table.column :course_category, as: :association, sortable: true
-= table.column :locale, sortable: true
-= table.column :name, sortable: true
-= table.column :description, sortable: true, class: 'truncate-chars truncate-chars-30'
 = table.acts_as_list_actions scope: 'course_category_id'
-= table.timestamps
+= table.column :course_category, as: :association, sortable: true, url: ->(resource) { [resource.course_category] }
+= table.column :name, sortable: true
+= table.column :locale, sortable: true
+= table.column :seats
+= table.column :free_seats do |resource|
+  .btn-group
+    %span{ class: "label label-#{resource.free_seats_level_properties[:css_class]}" }
+      = number_to_percentage(resource.free_seats_percentage, precision: 1)
+      = "(#{resource.free_seats})"
+= table.column :used_seats do |resource|
+  .btn-group
+    = button_to('-', [:decrement_used_seats, resource], class: 'btn btn-default btn-xs btn-danger', form_class: 'display-inline')
+    %span= resource.used_seats
+    = button_to('+', [:increment_used_seats, resource], class: 'btn btn-default btn-xs btn-success', form_class: 'display-inline')
+= table.column :description, sortable: true, class: 'truncate-chars truncate-chars-30'
+= table.column :created_at
+= table.column :updated_at

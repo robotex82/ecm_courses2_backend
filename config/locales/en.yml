@@ -3,3 +3,11 @@ en:
     ecm/courses/backend/engine: 'Courses'
   routes:
     ecm-courses-backend-engine: 'courses'
+  controller:
+    used_seats_concern:
+      decrement:
+        succeeded: Decreased number of free seats.
+        failed: "Could not decrease number of free seats: %{errors}"
+      increment:
+        succeeded: Incecreased number of free seats.
+        failed: "Could not increase number of free seats: %{errors}"
