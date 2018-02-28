@@ -1,0 +1,12 @@
+= table.row :course_category do |resource|
+  = link_to(resource.course_category.name, [resource.course_category])
+= table.row :locale
+= table.row :name
+= table.row :description
+= table.row :seats
+= table.row :used_seats
+= table.row :free_seats do |resource|
+  = resource.free_seats
+  %span{ class: "label label-#{resource.free_seats_level_properties[:css_class]}" }= number_to_percentage(resource.free_seats_percentage, precision: 1)
+= table.row :created_at
+= table.row :updated_at

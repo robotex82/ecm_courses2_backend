@@ -3,3 +3,11 @@ de:
     ecm/courses/backend/engine: 'Kurse'
   routes:
     ecm-courses-backend-engine: 'kurse'
+  controller:
+    used_seats_concern:
+      decrement:
+        succeeded: Anzahl belegter Plätze verringert.
+        failed: "Konnte die Anzahl belegter Plätze nicht verringern: %{errors}"
+      increment:
+        succeeded: Anzahl belegter Plätze erhöht.
+        failed: "Konnte die Anzahl belegter Plätze nicht erhöhen: %{errors}"
