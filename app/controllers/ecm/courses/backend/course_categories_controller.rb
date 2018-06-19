@@ -2,7 +2,7 @@ module Ecm
   module Courses
     module Backend
       class CourseCategoriesController < Itsf::Backend::Resource::BaseController
-        include Controller::FriendlyIdConcern
+        include ResourcesController::FriendlyIdConcern
 
         def self.resource_class
           Ecm::Courses::CourseCategory

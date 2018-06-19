@@ -2,8 +2,8 @@ module Ecm
   module Courses
     module Backend
       class CoursesController < Itsf::Backend::Resource::BaseController
-        include Controller::ActsAsListConcern
-        include Controller::FriendlyIdConcern
+        include ResourcesController::ActsAsListConcern
+        include ResourcesController::FriendlyIdConcern
         include Controller::UsedSeatsConcern
 
         def self.resource_class
